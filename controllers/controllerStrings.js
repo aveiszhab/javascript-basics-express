@@ -1,3 +1,14 @@
-exports.hello = (req, res) => {
-  res.send('Hello, world!');
+const { sayHello, uppercase, lowercase, firstCharacters } = require('../src/lib/strings');
+
+exports.sayHello = (req, res) => {
+  res.status(200).json({ result: sayHello(req.params.string) });
+};
+exports.uppercase = (req, res) => {
+  res.status(200).json({ result: uppercase(req.params.string) });
+};
+exports.lowercase = (req, res) => {
+  res.status(200).json({ result: lowercase(req.params.string) });
+};
+exports.firstCharacters = (req, res) => {
+  res.status(200).json({ result: firstCharacters(req.params.string, req.query.length || 1) });
 };
