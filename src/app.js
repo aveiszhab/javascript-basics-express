@@ -6,7 +6,7 @@ const routeStrings = require('../routes/routeStrings');
 
 const app = express();
 
-//app.use(express.json);
+app.use(express.json());
 
 app.use('/array', routeArrays);
 app.use('/booleans', routeBooleans);
