@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/array', routeArrays);
+app.use('/arrays', routeArrays);
 app.use('/booleans', routeBooleans);
 app.use('/numbers', routeNumbers);
 app.use('/strings', routeStrings);
