@@ -13,4 +13,4 @@ app.use('/booleans', routeBooleans);
 app.use('/numbers', routeNumbers);
 app.use('/strings', routeStrings);
 
-module.exports = app; 
+module.exports = app;
